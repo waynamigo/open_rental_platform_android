@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spingarr">
+        <item>未选择分类</item>
+        <item>工具类</item>
+        <item>数码类</item>
+        <item>家居类</item>
+        <item>学习类</item>
+        <item>服饰类</item>
+        <item>交通类</item>
+        <item>场地类</item>
+        <item>服务类</item>
+    </string-array>
+</resources>

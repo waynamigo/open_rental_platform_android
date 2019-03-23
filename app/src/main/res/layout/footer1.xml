@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <ImageView
+        android:id="@+id/iv_loading1"
+        android:visibility="gone"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:src="@drawable/anim_loading_view"/>
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avloadingIndicatorView_BallClipRotatePulse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/AVLoadingIndicatorView"
+        android:visibility="visible"
+        app:indicatorName="BallClipRotateMultipleIndicator"
+        app:indicatorColor="#000000" />
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:textSize="16sp"
+        android:text="上拉加载"/>
+</LinearLayout>

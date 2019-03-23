@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yizu.settlementActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/settleToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+<TextView
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_below="@+id/settleToolbar"
+    android:id="@+id/bill1"
+    android:text="本次租用账单"
+    android:textSize="20dp"
+    android:textColor="@android:color/black"
+    android:layout_centerHorizontal="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+<LinearLayout
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="5dp"
+    android:id="@+id/bill2"
+    android:layout_below="@+id/bill1"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+    <TextView
+        android:text="损耗率："
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_weight="1"
+        />
+    <TextView
+        android:id="@+id/rate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        android:gravity="right"
+        />
+</LinearLayout>
+<LinearLayout
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="5dp"
+    android:id="@+id/bill3"
+    android:layout_below="@+id/bill2"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+    <TextView
+        android:text="损耗费："
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_weight="1"
+        />
+    <TextView
+        android:id="@+id/rateMoney"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        android:gravity="right"
+        />
+</LinearLayout>
+<LinearLayout
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="5dp"
+    android:id="@+id/bill4"
+    android:layout_below="@+id/bill3"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+    <TextView
+        android:text="YI租平台给您结算："
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_weight="1"
+        />
+    <TextView
+        android:id="@+id/totalMoney"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        android:gravity="right"
+        />
+</LinearLayout>
+<Button
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_below="@+id/bill4"
+    android:id="@+id/submit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="提交"
+    android:background="#5fb7ef"
+    android:textColor="@color/white"
+    android:textSize="18sp"
+    />
+</RelativeLayout>

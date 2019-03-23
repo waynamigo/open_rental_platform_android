@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.example.yizu.SearchActivity">
+    <LinearLayout
+        android:id="@+id/bar"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <ImageButton
+            android:id="@+id/fanhui"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:background="@android:color/white"
+            android:src="@drawable/fanhui"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_width="0dp"
+            android:layout_height="50dp" />
+        <EditText
+            android:id="@+id/context"
+            android:hint="输入你想租用的物品"
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/yuyin"
+            android:layout_weight="0.6"
+            android:textSize="18sp"
+            android:background="@drawable/yuyin"
+            android:layout_marginRight="5dp"
+            android:layout_width="0dp"
+            android:layout_height="30dp" />
+
+        <Button
+            android:id="@+id/search"
+            android:layout_weight="1.4"
+            android:text="搜索"
+            android:textSize="18sp"
+            android:background="@drawable/button"
+            android:layout_width="0dp"
+            android:layout_height="30dp" />
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/history"
+        android:text="历史搜索"
+        android:textSize="16sp"
+        android:layout_below="@+id/bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageButton
+        android:id="@+id/clear"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/bar"
+        android:scaleType="centerInside"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:background="@drawable/garbage"
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_margin="10dp"
+        android:layout_below="@id/history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:flexWrap="wrap">
+        <TextView
+            android:id="@+id/his1"
+            android:text=""
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button1"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+        <TextView
+            android:id="@+id/his2"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+        <TextView
+            android:id="@+id/his3"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+        <TextView
+            android:id="@+id/his4"
+            android:text=""
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+        <TextView
+            android:id="@+id/his5"
+            android:text=""
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+    </com.google.android.flexbox.FlexboxLayout>
+</RelativeLayout>

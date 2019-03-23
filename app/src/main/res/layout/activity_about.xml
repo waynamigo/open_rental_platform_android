@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backColor"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/zabout">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="20dp"
+            android:src="@drawable/back"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="17dp"
+            android:id="@+id/about_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关于"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tubiao_r"
+        android:layout_below="@+id/zabout"
+        android:layout_marginTop="15dp">
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tubiao"
+        android:src="@drawable/yizulogo"
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tubiao"
+            android:text="版本号 0.0.1"
+            android:textColor="@color/colorPrimary"
+            android:textSize="17dp"
+            android:gravity="center"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tubiao_r"
+        android:id="@+id/ban">
+
+        <LinearLayout
+            android:id="@+id/two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/devide_line" />
+            <RelativeLayout
+                android:background="@color/whites"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/qingchu"
+                android:onClick="onClick"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/game"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/gengxin" />
+
+                <TextView
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/game"
+                    android:text="检测更新" />
+
+                <TextView
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已是最新版"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/devide_line" />
+
+            <RelativeLayout
+                android:background="@color/whites"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/user_text"
+                android:onClick="onClick"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/huodong"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/text" />
+
+                <TextView
+                    android:textSize="18dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/huodong"
+                    android:text="用户服务协议" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/goin" />
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/devide_line" />
+
+            <RelativeLayout
+                android:id="@+id/jifen_text"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/whites"
+                android:clickable="true"
+                android:onClick="onClick">
+
+                <ImageView
+                    android:id="@+id/jifen_huodong"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/jifen" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/jifen_huodong"
+                    android:text="积分规则"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/goin" />
+            </RelativeLayout>
+
+        </LinearLayout>
+          <ImageView
+              android:layout_width="150dp"
+              android:src="@drawable/saoyisao_logo"
+              android:layout_height="150dp"
+              android:layout_below="@+id/two"
+              android:layout_marginTop="20dp"
+              android:layout_centerHorizontal="true" />
+         <TextView
+             android:id="@+id/copyRight"
+             android:layout_alignParentBottom="true"
+             android:layout_marginBottom="20dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="copyright © 20016-2017 YI租\nAll Rights Reserved"
+             android:textSize="15dp"
+             android:gravity="center"
+             />
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

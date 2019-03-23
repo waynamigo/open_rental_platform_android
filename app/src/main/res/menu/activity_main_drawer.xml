@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/out"
+            android:title="租出" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/in"
+            android:title="租进" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/thing"
+            android:title="我的物品" />
+        <item
+            android:id="@+id/nav_release"
+            android:icon="@drawable/relea"
+            android:title="发布物品" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/set"
+            android:title="设置" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/share"
+            android:title="分享给朋友" />
+
+    </group>
+
+
+</menu>

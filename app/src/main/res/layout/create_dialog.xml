@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/title_message"
+            android:text="发布成功！"
+            android:gravity="center"
+            android:background="@drawable/linearlayout_line"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            />
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="确定"
+        android:background="@drawable/linearlayout_line"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        />
+  </LinearLayout>

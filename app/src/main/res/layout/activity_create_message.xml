@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/zabout">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="20dp"
+            android:src="@drawable/back"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="17dp"
+            android:id="@+id/release_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发布"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/goodsname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/linearlayout_line"
+                    android:drawablePadding="10dp"
+                    android:hint="商品标题 品类品牌类型等"
+                    android:inputType="text"
+                    android:lines="0"
+                    android:maxLength="20"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="#cccccc"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:gravity="left|bottom"
+                android:text="详细描述:"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/goodsMessage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/linearlayout_line"
+                    android:gravity="top"
+                    android:hint="请在此输入商品的详细信息"
+                    android:minLines="3"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="#cccccc"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:gravity="left|bottom"
+                android:text="选择分类："
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:background="@drawable/linearlayout_line"
+                android:id="@+id/spinner"
+                android:entries="@array/spingarr"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                />
+
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:weightSum="9">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="0dp"
+                    android:layout_weight="5"
+                    android:gravity="left|bottom"
+                    android:text="请输入该物品每日租金："
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <com.example.yizu.control.NumberAddSubView
+                    android:id="@+id/zujin1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="4">
+
+                </com.example.yizu.control.NumberAddSubView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:weightSum="9">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="0dp"
+                    android:layout_weight="5"
+                    android:gravity="left|bottom"
+                    android:text="请输入该物品押金："
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <com.example.yizu.control.NumberAddSubView
+                    android:id="@+id/yajin1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="4">
+
+                </com.example.yizu.control.NumberAddSubView>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="7dp"
+                android:gravity="left|bottom"
+                android:text="请选择第一张您要上传的图片："
+                android:textColor="#000000"
+                android:textSize="16sp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/choose2"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/bar"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/white"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/picture" />
+                <TextView
+                    android:id="@+id/progress2"
+                    android:layout_marginLeft="10dp"
+                    android:text="已上传0%"
+                    android:layout_gravity="bottom"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="7dp"
+                android:gravity="left|bottom"
+                android:text="请选择第二张您要上传的图片："
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/choose1"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/bar"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/white"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/picture" />
+                <TextView
+                    android:id="@+id/progress1"
+                    android:layout_marginLeft="10dp"
+                    android:text="已上传0%"
+                    android:layout_gravity="bottom"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="7dp"
+                android:gravity="left|bottom"
+                android:text="请选择第三张您要上传的图片："
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/choose3"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/bar"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/white"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/picture" />
+                <TextView
+                    android:id="@+id/progress3"
+                    android:layout_marginLeft="10dp"
+                    android:text="已上传0%"
+                    android:layout_gravity="bottom"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/rightmessage"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="40dp"
+                android:background="#5fb7ef"
+                android:gravity="center"
+                android:text="确认上传"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/linearlayout_line">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_gravity="left"
+            android:gravity="center"
+            android:minWidth="220px"
+            android:textColor="@android:color/background_dark"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_gravity="left"
+            android:gravity="center"
+            android:minWidth="220px"
+            android:textSize="40px" />
+
+        <TextView
+            android:id="@+id/RentMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@android:color/background_dark"
+            android:minWidth="220px"
+            android:textSize="80px" />
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="7dp"
+                android:textColor="@android:color/background_dark"
+                android:minWidth="220px"
+                android:text="交易物品："
+                android:textSize="40px" />
+
+            <TextView
+                android:id="@+id/goodsName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="300px"
+                android:textSize="40px" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30px">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="7dp"
+                android:textColor="@android:color/background_dark"
+                android:minWidth="220px"
+                android:text="交易押金："
+                android:textSize="40px" />
+
+            <TextView
+                android:id="@+id/OtherMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="300px"
+                android:textSize="40px" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="7dp"
+                android:minWidth="220px"
+                android:textColor="@android:color/background_dark"
+                android:text="交易编码："
+                android:textSize="40px" />
+
+            <TextView
+                android:id="@+id/code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="600px"
+                android:textSize="40px" />
+
+        </TableRow>
+
+        <Button
+            android:id="@+id/recordactivity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:background="#fffffc"
+            android:gravity="center"
+            android:text="查看详情"
+            android:textColor="@android:color/background_dark"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

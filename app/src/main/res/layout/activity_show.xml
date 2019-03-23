@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.yizu.control.PullUpToLoadMore
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_below="@+id/top"
+        android:id="@+id/ptlm"
+        android:orientation="vertical">
+
+        <com.example.yizu.control.MyScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+            <include layout="@layout/include_top">
+            </include>
+
+        </com.example.yizu.control.MyScrollView>
+
+        <com.example.yizu.control.MyScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <include layout="@layout/include_bottom"></include>
+
+            </LinearLayout>
+
+        </com.example.yizu.control.MyScrollView>
+
+    </com.example.yizu.control.PullUpToLoadMore>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:id="@+id/call"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#73cded"
+            android:gravity="center"
+
+            android:text="联系出租者"
+            android:textColor="#FFF"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/buy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#39acf2"
+            android:gravity="center"
+            android:text="立即租用"
+            android:textColor="#FFF"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+</LinearLayout>
